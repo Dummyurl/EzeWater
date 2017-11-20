@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idproductdetails"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/rlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="8dp"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlprices"
+            android:layout_below="@+id/rlname">
+
+            <ImageView
+                android:id="@+id/productimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+            <ProgressBar
+                android:id="@+id/circular_progress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlprices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlquantity">
+
+            <TextView
+                android:id="@+id/txtsale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="PRICE"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsale_price"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/txtmrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="MRP :"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtregular_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txtmrp"
+                    android:text="MRP"
+                    android:textColor="#f3ff0026"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rltotalprice"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgdecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/txtquantity"
+                android:background="@mipmap/minus" />
+
+            <TextView
+                android:id="@+id/txtquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="quantity"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/imgincrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/txtquantity"
+                android:background="@mipmap/plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltotalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rladdtocart">
+
+            <TextView
+                android:id="@+id/txttotalcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Water cost"
+                android:textColor="@color/btnactiveColor"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rladdtocart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/btnaddtocart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btnactiveColor"
+                android:text="ADD TO CART"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

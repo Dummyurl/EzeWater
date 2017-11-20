@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EzeWater</string>
+    <string name="url">http://vantagewebtech.com/puyangan</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="termcondition">I’ve read and accept the terms &amp; conditions</string>
+    <string name="textmessage">Please enter your registered email below to request a new password.</string>
+</resources>

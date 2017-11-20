@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bibupp.androidvantage.SearchActivity">
+
+
+
+    <item
+        android:id="@+id/options_menu_main_locator"
+        android:icon="@mipmap/shopstore"
+        android:title=""
+        app:actionViewClass="android.support.v7.widget.Button"
+        app:showAsAction="withText|always"
+        android:visible="false"/>
+    <item
+        android:id="@+id/options_menu_main_cart"
+        android:actionLayout="@layout/actionbar_badge_layout"
+        android:icon="@mipmap/viewcart"
+        android:title="Cart"
+        app:actionViewClass="android.support.v7.widget.Button"
+        app:showAsAction="always" />
+
+</menu>

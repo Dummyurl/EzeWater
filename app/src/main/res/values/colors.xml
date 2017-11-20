@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20b1c3</color>
+    <color name="colorPrimaryDark">#20b1c3</color>
+    <color name="colorAccent">#20b1c3</color>
+    <color name="SelectedColor">#b0cb1f</color>
+    <color name="UnSelectedColor">#f2f2f2</color>
+    <color name="btnactiveColor">#1db7ca</color>
+    <color name="btndeactiveColor">#7d35dad2</color>
+    <color name="btnactivetextColor">#FFFFFF</color>
+    <color name="btndeactivetextColor">#7defe8e8</color>
+    <color name="brown">#918c8c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgreen">#008000</color>
+    <color name="headerbackground">#036571</color>
+</resources>
